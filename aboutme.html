@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Huang</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+</head>
+
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="color-bar w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="index.html" class="w3-bar-item w3-button w3-wide"> <img src="images/icons/Daniel Logo.png" alt="Daniel Huang"></a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small menu">
+                <a href="index.html#profile" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
+                <a href="index.html#projects" class="w3-bar-item w3-button"><i class="fa fa-lightbulb-o"></i> PROJECTS</a>
+                <a href="aboutme.html" class="w3-bar-item w3-button"><i class="fa fa-user-circle-o"></i> ABOUT ME</a> <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-id-card-o"></i> CONTACT</a>
+                <a href="https://drive.google.com/file/d/1CBbre44Z8b56a5ZMp4wdW5h1joFGMpd4/view?usp=sharing" target="_blank " class="w3-bar-item w3-button"><i class="fa fa-address-book"></i> RESUME</a>
+            </div>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="index.html#profile" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-home"></i> HOME</a>
+            <a href="index.html#projects" class="w3-bar-item w3-button" onclick="toggleFunction()"><i
+                class="fa fa-lightbulb-o"></i> PROJECTS</a>
+            <a href="#aboutme" class="w3-bar-item w3-button" onclick="toggleFunction()"> <i class="fa fa-user-circle-o"></i> ABOUT ME</a>
+            <a href="contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-id-card-o"></i>
+                CONTACT</a>
+            <a href="https://drive.google.com/file/d/1CBbre44Z8b56a5ZMp4wdW5h1joFGMpd4/view?usp=sharing" target="_blank " class="w3-bar-item w3-button" onclick="toggleFunction()"><i
+                    class="fa fa-address-book"></i> RESUME</a>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+
+    <div>
+        <br>
+        <br>
+        <h2 class="left-divider fadeInLeft">About Me</h2>
+    </div>
+
+    <div class="aboutme w3-row-padding w3-container .w3-right-align">
+
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+                <img src="images/test.jpg" alt="Daniel Huang">
+            </div>
+
+            <div class="w3-twothird fadeIn">
+                <br><br><br><br>
+                <h2 class="fadeInRight"><b>Hi, My name is Daniel.</b></h2>
+                <h4 class="w3-padding-32"> I love automation, helping others, and my dog. </h4>
+
+                <p> Ever since I accidently fell into the world of automation three years ago, I've realized how much fun it is creating tools
+                    <br><br> It became evident that I was built for automation when I discovered that I could create programs that drastically
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="idk">
+        <div class="simple-divider">
+            &emsp;
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="aboutme2 w3-row-padding w3-container .w3-right-align">
+
+        <div class="w3-content">
+
+            <div class="w3-twothird wow fadeIn">
+                <br>
+                <p> Ever since I accidently fell into the world of automation three years ago, I've realized how much fun it is creating tools
+                    <br><br> It became evident that I was built for automation when I discovered that I could create programs that drastically
+                </p>
+            </div>
+            <div class="quote w3-third wow fadeIn">
+                <h1><b> "I work hard to make work easier." </b></h1>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="copyright"> <i class="fa fa-copyright"></i> Daniel Huang</div>
+
+            <div class="social-icons">
+                <a href="https://github.com/dhuang99"><i class="fa fa-github"></i></a>
+                <a href="https://www.facebook.com/danielhuang99/"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/daniel-huang426/"><i class="fa fa-linkedin"></i></a>
+                <a href="mailto:danielhuang99@gmail.com"><i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        new WOW().init();
+
+        // Change style of navbar on scroll
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " primary-color-scheme";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top primary-color-scheme", "");
+            }
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

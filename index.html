@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Huang</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+</head>
+
+
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="index.html#profile" class="w3-bar-item w3-button w3-wide"> <img src="images/icons/Daniel Logo.png" alt="Daniel Huang"></a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small menu">
+                <a href="index.html#profile" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
+                <a href="index.html#projects" class="w3-bar-item w3-button"><i class="fa fa-lightbulb-o"></i> PROJECTS</a>
+                <a href="aboutme.html" class="w3-bar-item w3-button"><i class="fa fa-user-circle-o"></i> ABOUT ME</a>
+                <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-id-card-o"></i> CONTACT</a>
+                <a href="https://drive.google.com/file/d/1CBbre44Z8b56a5ZMp4wdW5h1joFGMpd4/view?usp=sharing" target="_blank " class="w3-bar-item w3-button"><i class="fa fa-address-book"></i> RESUME</a>
+            </div>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="index.html#profile" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-home"></i> HOME</a>
+            <a href="index.html#projects" class="w3-bar-item w3-button" onclick="toggleFunction()"><i
+                class="fa fa-lightbulb-o"></i> PROJECTS</a>
+            <a href="#aboutme" class="w3-bar-item w3-button" onclick="toggleFunction()"> <i class="fa fa-user-circle-o"></i> ABOUT ME</a>
+            <a href="contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-id-card-o"></i>
+                CONTACT</a>
+            <a href="https://drive.google.com/file/d/1CBbre44Z8b56a5ZMp4wdW5h1joFGMpd4/view?usp=sharing" target="_blank " class="w3-bar-item w3-button" onclick="toggleFunction()"><i
+                    class="fa fa-address-book"></i> RESUME</a>
+        </div>
+    </div>
+
+    <!-- Header with full-height image -->
+    <header class="backgroundpic parallax w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-left w3-text-white" style="padding:48px">
+            <span class="w3-jumbo w3-hide-small cover-photo-title">Daniel Huang</span><br>
+            <span class="w3-xxlarge w3-hide-large w3-hide-medium"><b>Start something that matters</b></span><br>
+            <span class="w3-large cover-photo-text"> <i class="fa fa-code"></i> Software Developer <br> &emsp; &emsp;
+                <i class="fa fa-th"></i> Automation Enthusiast<br> &emsp; &emsp; &emsp; &emsp;
+                <i class="fa fa-lock"></i> Aspiring Cybersecurity Engineer <br> &emsp; &emsp; &emsp; &emsp; &emsp;
+                &emsp;
+                <i class="fa fa-gamepad"></i> Avid Gamer <br> <br> <br> </span>
+            <p><a href="index.html#profile" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn
+                    More About Me</a></p>
+        </div>
+        <div class="social w3-display-bottomleft w3-text-grey w3-large " style="padding:24px 48px" id="social">
+            <a href="https://github.com/dhuang99" target="_blank " class="fa fa-github w3-hover-opacity"> &nbsp</a>
+            <a href="https://www.facebook.com/danielhuang99/" target="_blank " class="fa fa-facebook-official w3-hover-opacity"> &nbsp</a>
+            <a href="https://www.linkedin.com/in/daniel-huang426/" target="_blank" class="fa fa-linkedin w3-hover-opacity"> &nbsp</a>
+            <a href="mailto:danielhuang99@gmail.com" target="_blank" class="fa fa-envelope w3-hover-opacity"> &nbsp</a>
+        </div>
+    </header>
+
+    <!-- Profile Picture -->
+    <section class="primary-color-scheme" id="profile">
+        <div class="divider-div">
+            <br>
+            <br>
+            <h2 class="divider ">Profile</h2>
+            <br>
+        </div>
+        <div class="w3-content propic w3-padding-16 w-3-row" id="propic">
+            <div class="side-text">
+                <p> Hi! My name is Daniel Huang and I recently graduated from the University of Maryland with a Bachelor's of Science in Computer Science.</p>
+            </div>
+            <div>
+                <img src="images/Pro Pic.jpg" alt="Daniel Huang">
+            </div>
+            <div class="side-text">
+                <p> Whether I am in the work place or play games, I seek to optimize my experience by creating tools to streamline my work. <br> <a href="aboutme.html"> Read more --></a></p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- TIMELINE -->
+    <div class="divider-div primary-color-scheme">
+        <br>
+        <br>
+        <h2 class="divider ">My Experience</h2>
+
+    </div>
+
+    <div id="workexperience" class="sectionClass primary-color-scheme">
+        <div class="row ">
+            <div class="fullWidth eight columns">
+                <ul class="cbp_tmtimeline">
+                    <li>
+                        <div class="cbp_tmicon">
+                            <img src="images/icons/umd logo.jpg" alt="University of Maryland College Park">
+                        </div>
+                        <div class="cbp_tmlabel wow fadeInRight animated">
+                            <h3>Technical Support Lead</h3>
+                            <div class="date">
+                                <i class="fa fa-calendar"></i>Jan 2020 - May 2021</div>
+                            <h4><i class="fa fa-gear"></i>Terrapin Tech, College Park</h4>
+                            <p class="projectParagraph">
+                                Worked with management to mitigate the impact of transitioning from in-person to remote.
+                                <br> Created Python and Bash scripts to help streamline processes.
+                                <br> <a href="index.html#projects">Read more --></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cbp_tmicon">
+                            <img src="images/icons/davislogo.png" alt="James G. Davis Construction">
+                        </div>
+                        <div class="cbp_tmlabel wow fadeInRight animated">
+                            <h3>Intern</h3>
+                            <h4><i class="fa fa-legal"></i>James G. Davis Construction, Rockville</h4>
+                            <div class="date"><i class="fa fa-calendar"></i>May 2019 - August 2019</div>
+                            <p class="projectParagraph">
+                                Created PowerShell scripts to automate tedious and repetative processes for asset management and employee directory management.
+                                <br>
+                                <a href="index.html#projects">Read more --></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cbp_tmicon">
+                            <img src="images/icons/umd logo.jpg" alt="University of Maryland College Park">
+                        </div>
+                        <div class="cbp_tmlabel wow fadeInRight animated">
+                            <h3>Technical Support Specialist</h3>
+                            <h4><i class="fa fa-wrench"></i>Terrapin Tech, College Park</h4>
+                            <div class="date"><i class="fa fa-calendar"></i>January 2018 - January 2020</div>
+                            <p class="projectParagraph">
+                                Solved incident-based issues with operating systems, application software, licensing, and hardware repairs on 1000+ Apple, Dell, Lenovo, and HP computers. Effectively communicated complex technical subjects to 500+ non-technical personnel.
+                            </p>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cbp_tmicon">
+                            <img src="images/icons/umd logo.jpg" alt="University of Maryland College Park">
+                        </div>
+                        <div class="cbp_tmlabel wow fadeInRight animated">
+                            <h3>Student</h3>
+                            <h4><i class="fa fa-graduation-cap"></i>Terrapin Tech, College Park</h4>
+                            <div class="date"><i class="fa fa-calendar"></i>August 2017 - May 2021</div>
+                            <p class="projectParagraph">Obtained Bachelor's of Science in Computer Science on the Cybersecurity track.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXPERTISE (work in progress) -->
+
+    <!-- <div class="divider-div">
+        <br>
+        <br>
+        <h2 class="divider " >My Expertise</h2>
+    </div> -->
+
+
+
+
+    <!-- PROJECTS -->
+
+    <div class="divider-div" id="projects">
+        <br>
+        <br>
+        <h2 class="divider ">My Projects</h2>
+    </div>
+
+
+    <!-- TEXT GUI TOOL -->
+    <div id="container">
+
+        <div class="product-details">
+
+            <h1>TEXT GUI TOOL</h1>
+
+            <p class="information"> <br> A simple Python GUI that I created during my time at <b>Terrapin Tech</b> that streamlines the process of copy-pasting email templates to respond to customer emails.
+            </p>
+
+            <div class="control">
+                <button class="btn">
+                    
+                    <span class="git-text" aria-hidden="true"> <a href="https://github.com/dhuang99/Text-GUI-Tool" target="_blank">Open in New Tab?</a> </span>
+                    <span class="git-icon"><i class="fa fa-github"></i></span>
+                    <span class="git-button">See in Github</span>
+                </button>
+            </div>
+        </div>
+        <div class="product-image">
+            <img src="images/icons/Text GUI.png" alt="">
+            <div class="info">
+                <h2> Project Details </h2>
+                <ul>
+                    <li><strong>Languages : </strong> PowerShell</li>
+                    <li><strong>Operating System : </strong> Windows 10</li>
+                    <li><strong>Tools: </strong>N/A</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- PDF NAME ORGANIZER -->
+    <div id="container">
+
+        <div class="product-details">
+
+            <h1>PDF NAME ORGANIZER</h1>
+
+            <p class="information"> <br> A PowerShell script that takes pre-named PDFs and moves them to their appropriate folder at a specified destintation.
+            </p>
+
+            <div class="control">
+                <button class="btn">
+                    <span class="git-text" aria-hidden="true"><a href="https://github.com/dhuang99/PDF-Name-Organizer" target="_blank">Open in New Tab?</a> </span>
+                    <span class="git-icon"><i class="fa fa-github"></i></span>
+                    <span class="git-button">See in Github</span>
+                </button>
+            </div>
+        </div>
+        <div class="product-image para">
+            <img src="images/icons/Folder Transfer.png" alt="Folder PDF Transfer Logo Icon">
+            <div class="info">
+                <h2> Project Details </h2>
+                <ul>
+                    <li><strong>Languages : </strong> PowerShell</li>
+                    <li><strong>Operating System : </strong> Windows 10</li>
+                    <li><strong>Tools: </strong>N/A</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- USER SETUP AUTOMATION -->
+
+    <div id="container">
+
+        <div class="product-details">
+
+            <h1>USER SETUP AUTOMATION</h1>
+
+            <p class="information"> <br> A PowerShell that changes various Windows settings and installs software for newly imaged Windows-based assets.
+
+            </p>
+
+            <div class="control">
+                <button class="btn">
+                    <span class="git-text" aria-hidden="true"><a href="https://github.com/dhuang99/User-Setup-Automation" target="_blank">Open in New Tab?</a> </span>
+                    <span class="git-icon"><i class="fa fa-github"></i></span>
+                    <span class="git-button">See in Github</span>
+                </button>
+            </div>
+        </div>
+        <div class="product-image">
+            <img src="images/icons/User Profile Setup.png" alt="User Profile Setup Icon">
+            <div class="info">
+                <h2> Project Details </h2>
+                <ul>
+                    <li><strong>Languages : </strong> PowerShell</li>
+                    <li><strong>Operating System : </strong> Windows 10</li>
+                    <li><strong>Tools: </strong>N/A</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+
+            <div class="copyright"> <i class="fa fa-copyright"></i> Daniel Huang</div>
+
+            <div class="social-icons">
+                <a href="https://github.com/dhuang99"><i class="fa fa-github"></i></a>
+                <a href="https://www.facebook.com/danielhuang99/"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/daniel-huang426/"><i class="fa fa-linkedin"></i></a>
+                <a href="mailto:danielhuang99@gmail.com"><i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+
+    <script>
+        new WOW().init();
+
+        // Change style of navbar on scroll
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " primary-color-scheme" + " secondary-color-scheme";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top primary-color-scheme", "");
+            }
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+</body>
+
+</html>
