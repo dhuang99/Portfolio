@@ -37,54 +37,6 @@
 }
 
 
-/***************** ANIMATIONS *****************/
-
-.animated {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: both
-}
-
-.fadeInUp {
-    opacity: 0;
-    animation-name: fadeInUp;
-    -webkit-animation-name: fadeInUp;
-}
-
-.fadeInRight {
-    animation: fadeInRight 1s ease-in-out;
-}
-
-.fadeInUp {
-    animation: fadeInUp 1s ease-in-out;
-}
-
-.fadeInLeft {
-    animation: fadeInLeft 1s ease-in-out;
-}
-
-.fadeIn {
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-.delay-half {
-    animation-delay: 0.5s;
-}
-
-.delay-one {
-    animation-delay: 1s;
-}
-
-.delay-onehalf {
-    animation-delay: 1.5s;
-}
-
-.delay-two {
-    animation-delay: 2s;
-}
-
-
 /***************** OVERALL SETTINGS *****************/
 
 body,
@@ -151,8 +103,21 @@ html {
 
 /******* PICTURE CUSTOMIZATION ******/
 
+.home-backgroundpic {
+    background-image: url("/images/background2.jpg");
+    min-height: 100%;
+    background-size: 150%;
+}
 
-/******* MENU BAR ******/
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/******* TOP MENU BAR ******/
 
 #navbar {
     margin: 0;
@@ -280,6 +245,54 @@ footer {
 
 .all-content {
     min-height: calc(100vh - 40px);
+}
+
+
+/***************** ANIMATIONS *****************/
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.fadeInRight {
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.fadeInUp {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.fadeInLeft {
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.fadeIn {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.delay-half {
+    animation-delay: 0.5s;
+}
+
+.delay-one {
+    animation-delay: 1s;
+}
+
+.delay-onehalf {
+    animation-delay: 1.5s;
+}
+
+.delay-two {
+    animation-delay: 2s;
 }
 
 
