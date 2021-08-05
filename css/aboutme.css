@@ -1,0 +1,83 @@
+/******* ABOUT ME *******/
+
+.aboutme {
+    max-width: 50%;
+    width: auto;
+    margin: 8% auto;
+    min-height: 100vh;
+}
+
+.aboutme .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.aboutme .container img {
+    max-width: 45%;
+    margin: auto;
+}
+
+.aboutme .container .textbox,
+.aboutme .container .pic-textbox {
+    max-width: 500px;
+}
+
+.aboutme .container .pic-textbox {
+    margin: 5% 0 0 10%;
+}
+
+.aboutme .container .pic-textbox h4 {
+    margin: 2em 0;
+}
+
+.aboutme .container .pic-textbox p {
+    line-height: 2em;
+}
+
+
+/* SECTION 2 */
+
+.aboutme .section2 {
+    margin: 10% 0 0 3%;
+}
+
+.aboutme .section2 .quote {
+    margin-left: 10%;
+    font-weight: 750 !important;
+}
+
+
+/* RESUME BUTTON */
+
+.aboutme .resume {
+    width: 160px;
+    height: 35px;
+    margin: 10% auto;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 1px gray;
+    background: var(--primary-text-color);
+    text-align: center;
+    transition: 1s;
+}
+
+.aboutme .resume button {
+    padding-top: 5px;
+    color: var(--background-color);
+    font-weight: 500;
+}
+
+.aboutme .resume a {
+    text-decoration: none;
+}
+
+.aboutme .resume:hover {
+    background: var(--background-color);
+    height: 37px;
+    width: 165px;
+}
+
+.aboutme .resume:hover>button {
+    color: var(--primary-text-color);
+    transform: translateY(3px);
+}

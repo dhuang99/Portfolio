@@ -1,0 +1,346 @@
+:root {
+    --background-color: #f6f7ff;
+    --primary-text-color: #525f7f;
+    --secondary-text-color: white;
+    --timeline-color: rgb(55, 141, 221);
+    --timeline-faded-color: #ebebeb;
+    --card-height: 40vw;
+    --card-margin: 4vw;
+    --card-top-offset: 8em;
+    --numcards: 4;
+    --outline-width: 0px;
+}
+
+
+/* Reset Values */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+/***************** COLOR SCHEMES *****************/
+
+.primary-color-scheme {
+    background-color: var(--background-color) !important;
+    color: var(--primary-text-color) !important;
+}
+
+.secondary-color-scheme {
+    color: var(--secondary-text-color);
+}
+
+
+/***************** ANIMATIONS *****************/
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.fadeInRight {
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.fadeInUp {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.fadeInLeft {
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.fadeIn {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.delay-half {
+    animation-delay: 0.5s;
+}
+
+.delay-one {
+    animation-delay: 1s;
+}
+
+.delay-onehalf {
+    animation-delay: 1.5s;
+}
+
+.delay-two {
+    animation-delay: 2s;
+}
+
+
+/***************** OVERALL SETTINGS *****************/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato", sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    color: var(--secondary-text-color);
+    scroll-behavior: smooth;
+    line-height: 1.8;
+    padding: 0;
+    margin: 0;
+    outline: red;
+    background: var(--background-color);
+    color: var(--primary-text-color);
+}
+
+
+/******* SECTION DIVIDERS ******/
+
+.divider {
+    max-width: 65%;
+    transform: translateX(30%);
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    margin: 1em -1em;
+}
+
+.left-divider {
+    font-weight: bolder;
+    font-size: 40px;
+    margin-top: 5%;
+    max-width: 30%;
+    width: auto;
+    text-align: left;
+    box-shadow: 0px 3px 1px -1px var(--primary-text-color);
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.divider:before,
+.divider:after {
+    content: "";
+    flex: 1;
+    height: 3px;
+    margin: 0 1em;
+    background: var(--primary-text-color);
+}
+
+.simple-divider {
+    width: 30%;
+    margin: 5% auto;
+    box-shadow: 0px 4px 3px -3px var(--primary-text-color);
+}
+
+
+/******* PICTURE CUSTOMIZATION ******/
+
+
+/******* MENU BAR ******/
+
+#navbar {
+    margin: 0;
+    padding: -10px -500px;
+}
+
+.w3-top img {
+    position: relative;
+    max-width: 150px;
+    max-height: 40px;
+    width: auto;
+    height: auto;
+}
+
+.w3-top a {
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.w3-top .menu {
+    transform: translateY(9%) translateX(-7%);
+}
+
+.color-bar {
+    color: var(--primary-text-color);
+}
+
+
+/***************** FOOTER *****************/
+
+footer {
+    text-align: center;
+    background: rgb(124, 124, 124);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 45px;
+    color: var(--secondary-text-color);
+    margin: 0 0 100px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    transform: translateY(13px);
+    position: relative;
+}
+
+.copyright {
+    transform: translateY(-2px);
+}
+
+.footer-content .social-icons {
+    display: flex;
+}
+
+.footer-content .social-icons a {
+    height: 30px;
+    width: 30px;
+    margin: 0 8px 0 0;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transform: translateY(-6.5px);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+
+/* GITHUB */
+
+.footer-content .social-icons a:nth-child(1) {
+    font-size: 19.5px;
+    color: #FFF;
+    background: #000;
+}
+
+.footer-content .social-icons a:nth-child(1):hover {
+    color: #000;
+    background: #FFF;
+}
+
+
+/* FACEBOOK */
+
+.footer-content .social-icons a:nth-child(2) {
+    background: #4267B2;
+}
+
+.footer-content .social-icons a:nth-child(2):hover {
+    color: #4267B2;
+    background: #fff;
+}
+
+
+/* LINKEDIN */
+
+.footer-content .social-icons a:nth-child(3) {
+    font-size: 18px;
+    background: #0e76a8;
+}
+
+.footer-content .social-icons a:nth-child(3):hover {
+    color: #0e76a8;
+    background: #fff;
+}
+
+
+/* GMAIL */
+
+.footer-content .social-icons a:nth-child(4) {
+    font-size: 18px;
+    background: #D44638;
+}
+
+.footer-content .social-icons a:nth-child(4):hover {
+    color: #D44638;
+    background: #fff;
+}
+
+.all-content {
+    min-height: calc(100vh - 40px);
+}
+
+
+/******* KEYFRAMES ******/
+
+@-webkit-keyframes fillLeft {
+    100% {
+        right: 100%;
+    }
+}
+
+@-webkit-keyframes fillTop {
+    100% {
+        top: 100%;
+    }
+}
+
+@-webkit-keyframes fillLeftOdd {
+    100% {
+        left: 100%;
+    }
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
