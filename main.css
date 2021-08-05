@@ -125,7 +125,7 @@ html {
 .left-divider {
     font-weight: bolder;
     font-size: 40px;
-    margin-left: 20%;
+    margin-top: 5%;
     max-width: 30%;
     width: auto;
     text-align: left;
@@ -143,8 +143,8 @@ html {
 }
 
 .simple-divider {
-    width: 20%;
-    margin: auto;
+    width: 30%;
+    margin: 5% auto;
     box-shadow: 0px 4px 3px -3px var(--primary-text-color);
 }
 
@@ -821,38 +821,85 @@ footer {
 /******* ABOUT ME *******/
 
 .aboutme {
-    max-width: 60%;
+    max-width: 50%;
     width: auto;
+    margin: 15% auto;
+    min-height: 100vh;
+}
+
+.aboutme .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.aboutme .container img {
+    max-width: 45%;
     margin: auto;
 }
 
-.aboutme img {
-    transform: translateX(-27%);
-    max-width: 200%;
-    width: auto;
-}
-
-.aboutme .w3-twothird {
-    transform: translateX(20%);
+.aboutme .container .textbox,
+.aboutme .container .pic-textbox {
     max-width: 500px;
 }
 
-.aboutme .w3-twothird p {
+.aboutme .container .pic-textbox {
+    margin: 5% 0 0 10%;
+}
+
+.aboutme .container .pic-textbox h4 {
+    margin: 2em 0;
+}
+
+.aboutme .container .pic-textbox p {
     line-height: 2em;
 }
 
-.aboutme2 {
-    transform: translateX(5%);
+
+/* SECTION 2 */
+
+.aboutme .section2 {
+    margin: 10% 0 0 3%;
 }
 
-.aboutme2 p {
-    max-width: 500px;
+.aboutme .section2 .quote {
+    margin-left: 10%;
+    font-weight: 750 !important;
 }
 
-.aboutme2 .quote {
-    max-width: 200px;
-    text-align: left;
-    transform: translateX(-40%);
+
+/* RESUME BUTTON */
+
+.aboutme .resume {
+    width: 160px;
+    height: 35px;
+    margin: 10% auto;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 1px gray;
+    background: var(--primary-text-color);
+    text-align: center;
+    transition: 1s;
+}
+
+.aboutme .resume button {
+    padding-top: 5px;
+    color: var(--background-color);
+    font-weight: 500;
+}
+
+.aboutme .resume a {
+    text-decoration: none;
+}
+
+.aboutme .resume:hover {
+    background: var(--background-color);
+    height: 37px;
+    width: 165px;
+}
+
+.aboutme .resume:hover>button {
+    color: var(--primary-text-color);
+    transform: translateY(3px);
 }
 
 
@@ -860,30 +907,21 @@ footer {
 
 .contact-overall {
     min-height: 100vh;
+    margin-top: 15%;
+}
+
+.contact-overall .left-divider {
+    margin-left: 22%;
 }
 
 .contact {
     position: relative;
-    padding: 50px 15% 50px 20%;
+    padding: 3% 15% 0 20%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background: var(--background-color);
-}
-
-.contact .content {
-    max-width: 800px;
-    text-align: center;
-}
-
-.contact .content h2 {
-    font-size: 30px;
-    font-weight: bolder;
-}
-
-.contact .content p {
-    font-weight: bold;
 }
 
 .contact .container {
@@ -991,13 +1029,13 @@ footer {
     .contact {
         padding: 50px;
     }
-    .container {
+    .contact .container {
         flex-direction: column;
     }
-    .container .contact-info {
+    .contact .container .contact-info {
         padding-bottom: 50px;
     }
-    .container.contact-info,
+    .contact .container.contact-info,
     .contact-form {
         width: 100%;
     }
