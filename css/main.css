@@ -104,9 +104,8 @@ html {
 /******* PICTURE CUSTOMIZATION ******/
 
 .home-backgroundpic {
-    background-image: url("/images/background2.jpg");
+    background-image: url("/images/motto.png");
     min-height: 100%;
-    background-size: 150%;
 }
 
 .parallax {
