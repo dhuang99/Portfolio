@@ -104,7 +104,7 @@ html {
 /******* PICTURE CUSTOMIZATION ******/
 
 .home-backgroundpic {
-    background-image: url("/images/motto.png");
+    background-image: url("/images/motto.png?v1");
     min-height: 100%;
 }
 
