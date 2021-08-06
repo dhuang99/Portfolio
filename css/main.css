@@ -106,6 +106,9 @@ html {
     background-image: url("/images/background2.jpg");
     /* background-image: url("/images/motto.png"); */
     min-height: 100%;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
 .parallax {
@@ -116,9 +119,26 @@ html {
 }
 
 
+/******* OPACITY ******/
+
+.transparent100 {
+    opacity: 1 !important;
+}
+
+.transparent75 {
+    background-color: rgba(246, 247, 255, 0.3) !important;
+    opacity: .75 !important;
+}
+
+.transparent50 {
+    opacity: .5 !important;
+}
+
+
 /******* TOP MENU BAR ******/
 
 #navbar {
+    background-color: rgba(246, 247, 255, 0.3);
     margin: 0;
     padding: -10px -500px;
 }
@@ -136,11 +156,15 @@ html {
     border-radius: 15px;
 }
 
+.mini-menu {
+    display: none !important;
+}
+
 .w3-top .menu-items {
     margin: 3px 1% 0 0;
     border: none;
     display: inline-block;
-    width: 70%;
+    width: 75%;
     height: 50px;
     vertical-align: middle;
     overflow: hidden;
@@ -273,14 +297,7 @@ footer {
 
 /***************** RESPONSIVE *****************/
 
-@media (min-width: 380px) {
-    .mini-menu {
-        display: block !important;
-    }
-    .menu-items {
-        display: none !important;
-    }
-}
+@media (max-width: 380px) {}
 
 @media (max-width: 650px) {
     .divider {
@@ -288,12 +305,12 @@ footer {
     }
 }
 
-@media (min-width: 950px) {
+@media (max-width: 950px) {
     .mini-menu {
-        display: none !important;
+        display: inline-block !important;
     }
     .menu-items {
-        display: block !important;
+        display: none !important;
     }
 }
 

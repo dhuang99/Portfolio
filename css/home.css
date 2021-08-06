@@ -526,7 +526,7 @@
     }
 }
 
-@media (min-width: 950) {}
+@media (max-width: 950) {}
 
 @media (max-width: 1024px) {
     .propic {
@@ -584,5 +584,26 @@
     }
     .cbp_tmtimeline>li .cbp_tmtime span:last-child {
         font-size: 1.5em;
+    }
+    #container {
+        width: 65% !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    #container {
+        width: 60% !important;
+    }
+}
+
+@media (max-width: 1600px) {
+    #container {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .profile {
+        margin-bottom: 5%;
     }
 }
