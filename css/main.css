@@ -67,11 +67,10 @@ html {
 
 .divider {
     max-width: 65%;
-    transform: translateX(30%);
+    margin: 30px auto;
     display: flex;
     align-items: center;
     font-size: 40px;
-    margin: 1em -1em;
 }
 
 .left-divider {
@@ -104,7 +103,8 @@ html {
 /******* PICTURE CUSTOMIZATION ******/
 
 .home-backgroundpic {
-    background-image: url("/images/motto.png?v1");
+    background-image: url("/images/background2.jpg");
+    /* background-image: url("/images/motto.png"); */
     min-height: 100%;
 }
 
@@ -136,8 +136,31 @@ html {
     border-radius: 15px;
 }
 
-.w3-top .menu {
-    transform: translateY(9%) translateX(-7%);
+.w3-top .menu-items {
+    margin: 3px 1% 0 0;
+    border: none;
+    display: inline-block;
+    width: 70%;
+    height: 50px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: right;
+    float: right;
+}
+
+.w3-top .menu-items a {
+    margin: 5px 5px 0 0;
+    padding: 3px 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.w3-top .menu-items a:hover {
+    background: var(--primary-text-color);
+    color: var(--background-color);
+    transform: translate(-3px, -3px);
 }
 
 .color-bar {
@@ -149,13 +172,14 @@ html {
 
 footer {
     text-align: center;
-    background: rgb(124, 124, 124);
+    background: rgb(78, 78, 78);
+    box-shadow: 0 1.5px 7px 1px gray;
     width: 100%;
     bottom: 0;
     left: 0;
     height: 45px;
     color: var(--secondary-text-color);
-    margin: 0 0 100px 0;
+    margin: 10% 0 0 0;
 }
 
 .footer-content {
@@ -173,6 +197,7 @@ footer {
 }
 
 .footer-content .social-icons {
+    transform: translateY(-5.5px);
     display: flex;
 }
 
@@ -185,7 +210,6 @@ footer {
     color: #fff;
     font-size: 20px;
     text-decoration: none;
-    transform: translateY(-6.5px);
     transition: all 0.4s ease;
     position: relative;
 }
@@ -247,6 +271,33 @@ footer {
 }
 
 
+/***************** RESPONSIVE *****************/
+
+@media (min-width: 380px) {
+    .mini-menu {
+        display: block !important;
+    }
+    .menu-items {
+        display: none !important;
+    }
+}
+
+@media (max-width: 650px) {
+    .divider {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 950px) {
+    .mini-menu {
+        display: none !important;
+    }
+    .menu-items {
+        display: block !important;
+    }
+}
+
+
 /***************** ANIMATIONS *****************/
 
 .animated {
@@ -295,7 +346,7 @@ footer {
 }
 
 
-/******* KEYFRAMES ******/
+/***************** KEYFRAMES *****************/
 
 @-webkit-keyframes fillLeft {
     100% {

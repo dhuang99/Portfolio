@@ -7,8 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Huang</title>
-    <link rel="stylesheet" href="css/main.css?v3">
-    <link rel="stylesheet" href="css/home.css?v2">
+    <link rel="stylesheet" href="css/main.css?v4">
+    <link rel="stylesheet" href="css/home.css?v4">
     <link rel="icon" href="images/icons/Daniel Logo-favicon.png">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -24,23 +24,23 @@
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
         <div class="w3-bar" id="myNavbar">
-            <a class="mini-menu w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleMiniMenu()" title="Toggle Navigation Menu">
+            <a class="mini-menu w3-bar-item w3-button w3-hover-black w3-right" href="javascript:void(0);" onclick="toggleMiniMenu()" title="Toggle Navigation Menu">
                 <i class="fa fa-bars"></i>
             </a>
-            <a href="index.html#profile" class="w3-bar-item w3-button w3-wide"> <img src="images/icons/Daniel Logo.png" alt="Daniel Huang"></a>
+            <a href="index.html#profile" class="w3-bar-item w3-wide"> <img src="images/icons/Daniel Logo.png" alt="Daniel Huang"></a>
             <!-- Right-sided navbar links -->
-            <div class="w3-right w3-hide-small menu">
-                <a href="index.html#profile" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
-                <a href="index.html#projects" class="w3-bar-item w3-button"><i class="fa fa-lightbulb-o"></i>
+            <div class="menu-items">
+                <a href="index.html#profile" class=""><i class="fa fa-home"></i> HOME</a>
+                <a href="index.html#projects" class=""><i class="fa fa-lightbulb-o"></i>
                     PROJECTS</a>
-                <a href="aboutme.html" class="w3-bar-item w3-button"><i class="fa fa-user-circle-o"></i> ABOUT ME</a>
-                <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-id-card-o"></i> CONTACT</a>
-                <a href="https://drive.google.com/file/d/1CBbre44Z8b56a5ZMp4wdW5h1joFGMpd4/view?usp=sharing" target="_blank " class="w3-bar-item w3-button"><i class="fa fa-address-book"></i> RESUME</a>
+                <a href="aboutme.html" class=""><i class="fa fa-user-circle-o"></i> ABOUT ME</a>
+                <a href="contact.html" class=""><i class="fa fa-id-card-o"></i> CONTACT</a>
+                <a href="https://drive.google.com/file/d/1CBbre44Z8b56a5ZMp4wdW5h1joFGMpd4/view?usp=sharing" target="_blank " class=""><i class="fa fa-address-book"></i> RESUME</a>
             </div>
         </div>
 
         <!-- Navbar on small screens -->
-        <div id="navmenu" class="w3-bar-block w3-white w3-hide ">
+        <div id="navmenu" class="w3-bar-block w3-hide ">
             <a href="index.html#profile" class="w3-bar-item w3-button" onclick="toggleMiniMenu()"><i
                     class="fa fa-home"></i> HOME</a>
             <a href="index.html#projects" class="w3-bar-item w3-button" onclick="toggleMiniMenu()"><i
@@ -76,14 +76,12 @@
     </header>
 
     <!-- Profile Picture -->
-    <section class="primary-color-scheme" id="profile">
-        <div class="divider-div">
-            <br>
-            <br>
-            <h2 class="divider ">Profile</h2>
-            <br>
-        </div>
-        <div class="w3-content propic w3-padding-16 w-3-row" id="propic">
+
+
+    <section class="profile primary-color-scheme" id="profile">
+        <br><br><br>
+        <h2 class="divider ">Profile</h2>
+        <div class="propic">
             <div class="side-text">
                 <p> Hi! My name is Daniel Huang and I recently graduated from the University of Maryland with a Bachelor's of Science in Computer Science.</p>
             </div>
@@ -93,20 +91,27 @@
             <div class="side-text">
                 <p> Whether I am in the work place or playing games, I seek to optimize my experience by creating tools to streamline my work. <br> <a href="aboutme.html"> Read more --></a></p>
             </div>
-
         </div>
+
+        <div class="propic-small" id="propic">
+
+            <div>
+                <img src="images/Pro Pic.jpg" alt="Daniel Huang">
+            </div>
+            <div class="side-text">
+                <p> Hi! My name is Daniel Huang and I recently graduated from the University of Maryland with a Bachelor's of Science in Computer Science.</p>
+            </div>
+            <div class="side-text">
+                <p> Whether I am in the work place or playing games, I seek to optimize my experience by creating tools to streamline my work. <br> <a href="aboutme.html"> Read more --></a></p>
+            </div>
+        </div>
+
     </section>
 
 
     <!-- TIMELINE -->
-    <div class="divider-div primary-color-scheme">
-        <br>
-        <br>
-        <h2 class="divider ">My Experience</h2>
-
-    </div>
-
     <div id="workexperience" class="sectionClass primary-color-scheme">
+        <h2 class="divider">My Experience</h2>
         <div class="row ">
             <div class="fullWidth eight columns">
                 <ul class="cbp_tmtimeline">
