@@ -126,8 +126,7 @@ html {
 }
 
 .transparent75 {
-    background-color: rgba(246, 247, 255, 0.3) !important;
-    opacity: .75 !important;
+    background-color: rgba(246, 247, 255, 0.85) !important;
 }
 
 .transparent50 {
@@ -154,10 +153,6 @@ html {
 .w3-top a {
     font-size: 20px;
     border-radius: 15px;
-}
-
-.mini-menu {
-    display: none !important;
 }
 
 .w3-top .menu-items {
@@ -192,6 +187,42 @@ html {
 }
 
 
+/******* MINI MENU BAR ******/
+
+
+/* MINI MENU ICON */
+
+.mini-menu {
+    margin: 3px 7px 0 0;
+    background-color: none;
+    display: none !important;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#navmenu {
+    width: 100%;
+    text-align: right;
+    display: none;
+    transition: 0.5s;
+    border: none;
+}
+
+#navmenu a {
+    border-radius: 0;
+    background: rgba(246, 247, 255, 0.85) !important;
+    padding: 10px 0 10px 0 !important;
+}
+
+.navmenu-show {
+    display: flex !important;
+    flex-direction: column;
+    text-align: right;
+}
+
+
 /***************** FOOTER *****************/
 
 footer {
@@ -207,21 +238,21 @@ footer {
 }
 
 .footer-content {
-    max-width: 1200px;
+    width: 80%;
+    height: 5%;
     margin: auto;
     justify-content: space-between;
     display: flex;
     flex-direction: row;
-    transform: translateY(13px);
-    position: relative;
+    margin-top: 10px;
 }
 
-.copyright {
-    transform: translateY(-2px);
+.footer-content .copyright {
+    margin-top: 9px;
 }
 
 .footer-content .social-icons {
-    transform: translateY(-5.5px);
+    margin-top: 7px;
     display: flex;
 }
 
@@ -290,14 +321,17 @@ footer {
     background: #fff;
 }
 
-.all-content {
-    min-height: calc(100vh - 40px);
-}
-
 
 /***************** RESPONSIVE *****************/
 
-@media (max-width: 380px) {}
+@media (max-width: 380px) {
+    .footer-content {
+        justify-content: center;
+    }
+    .footer-content .copyright {
+        display: none;
+    }
+}
 
 @media (max-width: 650px) {
     .divider {
@@ -313,6 +347,8 @@ footer {
         display: none !important;
     }
 }
+
+@media (max-width: 950px) {}
 
 
 /***************** ANIMATIONS *****************/
@@ -422,5 +458,16 @@ footer {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@-webkit-keyframes menuEnterRight {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

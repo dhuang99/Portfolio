@@ -277,9 +277,9 @@
 }
 
 .cbp_tmicon img {
-    width: 75%;
+    width: 95%;
     border-radius: 50%;
-    transform: translateY(16%);
+    margin-top: 3.5px;
 }
 
 

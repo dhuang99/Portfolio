@@ -7,14 +7,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Huang - Contact</title>
-    <link rel="stylesheet" href="css/main.css?v4">
-    <link rel="stylesheet" href="css/contact.css?v4">
+    <link rel="stylesheet" href="css/main.css?v5">
+    <link rel="stylesheet" href="css/contact.css?v5">
     <link rel="icon" href="images/icons/Daniel Logo-favicon.png">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="scripts.js?v2"></script>
+    <script src="scripts.js?v3"></script>
 </head>
 
 
@@ -22,34 +22,34 @@
 
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
-        <div class="w3-bar" id="myNavbar">
-            <a class="color-bar w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleMiniMenu()" title="Toggle Navigation Menu">
+        <div class="w3-bar " id="myNavbar">
+            <a class="mini-menu w3-bar-item w3-right" href="javascript:void(0);" onclick="toggleMiniMenu()" title="Toggle Navigation Menu">
                 <i class="fa fa-bars"></i>
             </a>
-            <a href="index.html" class="w3-bar-item w3-button w3-wide"> <img src="images/icons/Daniel Logo.png" alt="Daniel Huang"></a>
+            <a href="index.html#profile" class="w3-bar-item w3-wide"> <img src="images/icons/Daniel Logo.png" class="transparent100" alt="Daniel Huang"></a>
             <!-- Right-sided navbar links -->
-            <div class="w3-right w3-hide-small menu">
-                <a href="index.html#profile" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
-                <a href="index.html#projects" class="w3-bar-item w3-button"><i class="fa fa-lightbulb-o"></i>
-                    PROJECTS</a>
-                <a href="aboutme.html" class="w3-bar-item w3-button"><i class="fa fa-user-circle-o"></i> ABOUT ME</a>
-                <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-id-card-o"></i> CONTACT</a>
-                <a href="https://drive.google.com/file/d/1CBbre44Z8b56a5ZMp4wdW5h1joFGMpd4/view?usp=sharing" target="_blank " class="w3-bar-item w3-button"><i class="fa fa-address-book"></i> RESUME</a>
+            <div class="menu-items">
+                <a href="index.html#profile" class=""><i class="fa fa-home"></i> HOME</a>
+                <a href="aboutme.html" class=""><i class="fa fa-user-circle-o"></i> ABOUT ME</a>
+                <a href="contact.html" class=""><i class="fa fa-id-card-o"></i> CONTACT</a>
+                <a href="https://drive.google.com/file/d/1CBbre44Z8b56a5ZMp4wdW5h1joFGMpd4/view?usp=sharing" target="_blank " class=""><i class="fa fa-address-book"></i> RESUME</a>
             </div>
         </div>
 
         <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <div id="navmenu" class="transparent75">
             <a href="index.html#profile" class="w3-bar-item w3-button" onclick="toggleMiniMenu()"><i
-                    class="fa fa-home"></i> HOME</a>
+                class="fa fa-home"></i> HOME</a>
+            <a href="index.html#workexperience" class="w3-bar-item w3-button" onclick="toggleMiniMenu()"><i
+                    class="fa fa-building"></i> MY EXPERIENCE</a>
             <a href="index.html#projects" class="w3-bar-item w3-button" onclick="toggleMiniMenu()"><i
-                    class="fa fa-lightbulb-o"></i> PROJECTS</a>
+                class="fa fa-lightbulb-o"></i> PROJECTS</a>
             <a href="aboutme.html" class="w3-bar-item w3-button" onclick="toggleMiniMenu()"> <i class="fa fa-user-circle-o"></i> ABOUT ME</a>
             <a href="contact.html" class="w3-bar-item w3-button" onclick="toggleMiniMenu()"><i
-                    class="fa fa-id-card-o"></i>
-                CONTACT</a>
+                class="fa fa-id-card-o"></i>
+            CONTACT</a>
             <a href="https://drive.google.com/file/d/1CBbre44Z8b56a5ZMp4wdW5h1joFGMpd4/view?usp=sharing" target="_blank " class="w3-bar-item w3-button" onclick="toggleMiniMenu()"><i
-                    class="fa fa-address-book"></i> RESUME</a>
+                class="fa fa-address-book"></i> RESUME</a>
         </div>
     </div>
 
