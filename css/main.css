@@ -71,6 +71,7 @@ html {
     display: flex;
     align-items: center;
     font-size: 40px;
+    display: flex;
 }
 
 .left-divider {
@@ -335,7 +336,7 @@ footer {
 
 @media (max-width: 650px) {
     .divider {
-        font-size: 32px;
+        font-size: 28px;
     }
 }
 
@@ -347,8 +348,6 @@ footer {
         display: none !important;
     }
 }
-
-@media (max-width: 950px) {}
 
 
 /***************** ANIMATIONS *****************/
